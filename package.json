@@ -1,0 +1,33 @@
+{
+  "name": "polling-day-sync",
+  "version": "1.0.0",
+  "description": "Sync users betwween Nation Builder and Deputy",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/bxjx/polling-day-sync"
+  },
+  "keywords": [
+    "nation",
+    "builder",
+    "deputy",
+    "sync"
+  ],
+  "author": "B.J. Rossiter",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/bxjx/polling-day-sync/issues"
+  },
+  "homepage": "https://github.com/bxjx/polling-day-sync",
+  "dependencies": {
+    "async": "^0.9.0",
+    "basic-auth-connect": "^1.0.0",
+    "coffee-script": "^1.8.0",
+    "express": "^4.9.8",
+    "lodash": "^2.4.1",
+    "request": "^2.45.0"
+  }
+}

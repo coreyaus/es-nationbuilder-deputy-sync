@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Polling Day Sync</title>
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
+    <!-- Optional theme -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css">
+  </head>
+  <body>
+    <div class="container">
+      <div class="hero-unit">
+        <p class="lead"><h1>Sync from <a href="http://field.getup.org.au">field.getup.org.au</a> to <a href="https://getup.au.deputy.com">getup.au.deputy.com</a></h1></p>
+        <p class="lead"><button class="btn btn-lg btn-primary" id="sync" data-loading-text="Syncing...">Sync</button></p>
+      </div>
+    </div>
+    <script src="//code.jquery.com/jquery-2.1.1.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+    <script>
+    $(function(){
+      $('#sync').click(function(e){
+        var btn = $(this)
+        btn.button('loading')
+        $.post('/sync').done(function() { alert('Successful!'); }).fail(function() { alert("Error!"); }).always(function(){ btn.button('reset'); });
+      });
+    });
+    </script>
+  </body>
+</html>
