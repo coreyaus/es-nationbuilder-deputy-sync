@@ -16,7 +16,6 @@ nb =
 
 aliasEmail = (email) ->
   escapedEmail = deputy.baseEmail.replace('@', '_AT_')
-    .replace(/\./g, '_DOT_', 'g')
     .replace(/\+/g, '_PLUS_', 'g')
   deputy.baseEmail.replace '@', "+#{escapedEmail}@"
 
