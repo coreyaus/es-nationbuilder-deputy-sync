@@ -17,11 +17,10 @@ nb =
 aliasEmail = (email) ->
   escapedEmail = deputy.baseEmail.replace('@', '_AT_')
     .replace(/\./g, '_DOT_', 'g')
-    .replace(/+/g, '_PLUS_', 'g')
+    .replace(/\+/g, '_PLUS_', 'g')
   deputy.baseEmail.replace '@', "+#{escapedEmail}@"
 
 createDeputyUser = (user, cb) ->
-  if _.include user.tags, nb.tag then return cb()
   deputyUser =
     intCompanyId: deputy.companyID
     strFirstName: user.first_name
