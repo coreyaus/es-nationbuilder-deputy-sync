@@ -27,11 +27,11 @@ createDeputyUser = (user, cb) ->
     strEmail: aliasEmail(user.email)
     intRoleId: deputy.employeeRoleID
     strMobilePhone: user.mobile
-  url = 'https://getup.au.deputy.com/api/v1/addemployee'
+  url = 'https://lv1.au.deputy.com/api/v1/addemployee'
   request.post _.merge(deputy.api, uri: url, json: deputyUser), cb
 
 getNBUsers = (cb) ->
-  url = "https://gu.nationbuilder.com/api/v1/tags/#{encodeURIComponent(nb.tag)}/people?per_page=1000&access_token=#{process.env.NATIONBUILDER_TOKEN}"
+  url = "https://lv1.nationbuilder.com/api/v1/tags/#{encodeURIComponent(nb.tag)}/people?per_page=1000&access_token=#{process.env.NATIONBUILDER_TOKEN}"
   request.get uri: url, json: true, (err, res, json) ->
     if err then return cb err
     if res.statusCode is not 200 then cb 'Error status code from NB'
