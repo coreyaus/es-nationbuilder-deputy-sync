@@ -1,14 +1,14 @@
 {
-  "name": "polling-day-sync",
+  "name": "nationbuilder-deputy-sync",
   "version": "1.0.0",
-  "description": "Sync users betwween Nation Builder and Deputy",
+  "description": "Sync users in Nation Builder with a tag to Deputy",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/bxjx/polling-day-sync"
+    "url": "https://github.com/bxjx/nationbuilder-deputy-sync"
   },
   "keywords": [
     "nation",
@@ -19,7 +19,7 @@
   "author": "B.J. Rossiter",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/bxjx/polling-day-sync/issues"
+    "url": "https://github.com/bxjx/nationbuilder-deputy-sync/issues"
   },
   "homepage": "https://github.com/bxjx/polling-day-sync",
   "dependencies": {
