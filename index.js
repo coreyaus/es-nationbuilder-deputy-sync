@@ -3,7 +3,7 @@ var basicAuth = require('basic-auth-connect');
 var app = express();
 require('coffee-script/register');
 var sync = require('./sync').sync;
-app.use(basicAuth('kajute', process.env.PASSWORD || 'password'));
+app.use(basicAuth('kajute', 'green2014'));
 app.use(express.static(__dirname + '/public'))
 app.post('/sync', function(req, res) {
   sync(function(err){
