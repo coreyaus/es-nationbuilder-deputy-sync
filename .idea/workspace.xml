@@ -30,7 +30,7 @@
         <entry file="file://$PROJECT_DIR$/sync.coffee">
           <provider selected="true" editor-type-id="text-editor">
             <state vertical-scroll-proportion="0.7209302" vertical-offset="340" max-vertical-offset="735">
-              <caret line="33" column="105" selection-start-line="33" selection-start-column="105" selection-end-line="33" selection-end-column="105" />
+              <caret line="33" column="104" selection-start-line="33" selection-start-column="104" selection-end-line="33" selection-end-column="104" />
               <folding />
             </state>
           </provider>
@@ -302,7 +302,7 @@
     <entry file="file://$PROJECT_DIR$/sync.coffee">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.7209302" vertical-offset="340" max-vertical-offset="735">
-          <caret line="33" column="105" selection-start-line="33" selection-start-column="105" selection-end-line="33" selection-end-column="105" />
+          <caret line="33" column="104" selection-start-line="33" selection-start-column="104" selection-end-line="33" selection-end-column="104" />
           <folding />
         </state>
       </provider>
