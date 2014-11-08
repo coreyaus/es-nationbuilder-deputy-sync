@@ -5,7 +5,7 @@ async = require 'async'
 deputy =
   companyID: 1
   employeeRoleID: 50
-  baseEmail: 'kajute@kajute.com'
+  baseEmail: 'corey@freshhold.com.co'
   api:
     json: true
     headers:
