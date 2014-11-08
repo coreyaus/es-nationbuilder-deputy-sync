@@ -31,7 +31,7 @@ createDeputyUser = (user, cb) ->
   request.post _.merge(deputy.api, uri: url, json: deputyUser), cb
 
 getNBUsers = (cb) ->
-  url = "https://melbourne.nationbuilder.com/api/v1/tags/#{encodeURIComponent(nb.tag)}/people?per_page=30&access_token=#{process.env.NATIONBUILDER_TOKEN}"
+  url = "https://melbourne.nationbuilder.com/api/v1/tags/#{encodeURIComponent(nb.tag)}/people?access_token=#{process.env.NATIONBUILDER_TOKEN}"
   request.get uri: url, json: true, (err, res, json) ->
     if err then return cb err
     if res.statusCode is not 200 then cb 'Error status code from NB'
