@@ -3,7 +3,7 @@ _ = require 'lodash'
 async = require 'async'
 
 deputy =
-  companyID: 3
+  companyID: 1
   employeeRoleID: 50
   baseEmail: 'kajute@kajute.com'
   api:
@@ -12,11 +12,11 @@ deputy =
       Authorization: "OAuth #{process.env.DEPUTY_TOKEN}"
 
 nb =
-  tag: 'Will: Polling Day'
+  tag: 'will: polling day'
 
 aliasEmail = (email) ->
   escapedEmail = deputy.baseEmail.replace('@', '_AT_')
-    .replace(/\+/g, '_PLUS_', 'g')
+  .replace(/\+/g, '_PLUS_', 'g')
   deputy.baseEmail.replace '@', "+#{escapedEmail}@"
 
 createDeputyUser = (user, cb) ->
