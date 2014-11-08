@@ -12,7 +12,7 @@ deputy =
       Authorization: "OAuth #{process.env.DEPUTY_TOKEN}"
 
 nb =
-  tag: 'will_polling_day'
+  tag: 'Will: Polling Day'
 
 aliasEmail = (email) ->
   escapedEmail = deputy.baseEmail.replace('@', '_AT_')
