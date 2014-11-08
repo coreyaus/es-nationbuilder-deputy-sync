@@ -26,7 +26,7 @@ createDeputyUser = (user, cb) ->
     strLastName: user.last_name
     strEmail: aliasEmail(user.email)
     intRoleId: deputy.employeeRoleID
-    strDob: 1970-01-01
+    strDob: "1970-01-01"
     strMobilePhone: user.mobile
   url = 'https://ellensandell.au.deputy.com/api/v1/addemployee'
   request.post _.merge(deputy.api, uri: url, json: deputyUser), cb
