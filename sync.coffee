@@ -12,7 +12,7 @@ deputy =
       Authorization: "OAuth 399e8728f80d015086144396838ad47a"
 
 nb =
-  tag: 'will: polling day'
+  tag: 'Will: Polling Day'
 
 aliasEmail = (email) ->
   escapedEmail = deputy.baseEmail.replace('@', '_AT_')
