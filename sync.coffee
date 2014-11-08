@@ -9,7 +9,7 @@ deputy =
   api:
     json: true
     headers:
-      Authorization: "OAuth 399e8728f80d015086144396838ad47a"
+      Authorization: "OAuth #{process.env.DEPUTY_TOKEN}"
 
 nb =
   tag: 'Will: Polling Day'
@@ -31,7 +31,7 @@ createDeputyUser = (user, cb) ->
   request.post _.merge(deputy.api, uri: url, json: deputyUser), cb
 
 getNBUsers = (cb) ->
-  url = "https://melbourne.nationbuilder.com/api/v1/tags/#{encodeURIComponent(nb.tag)}/people?per_page=1&access_token=0d40d9152272bc7b964504d97cb5c9ab3a29d2e548f2cf5a9332bd4eeefa4b78"
+  url = "https://melbourne.nationbuilder.com/api/v1/tags/#{encodeURIComponent(nb.tag)}/people?per_page=30&#{process.env.NATIONBUILDER_TOKEN}"
   request.get uri: url, json: true, (err, res, json) ->
     if err then return cb err
     if res.statusCode is not 200 then cb 'Error status code from NB'
